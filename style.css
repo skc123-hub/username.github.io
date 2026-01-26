@@ -1,0 +1,70 @@
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f2f2f2;
+}
+
+header{
+  background:#0a3d62;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+
+.logo{
+  width:80px;
+  margin-bottom:5px;
+}
+
+.container{
+  padding:15px;
+}
+
+.service{
+  background:white;
+  margin-bottom:12px;
+  padding:15px;
+  border-radius:8px;
+  cursor:pointer;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service h3{
+  margin:0;
+}
+
+.details{
+  display:none;
+  margin-top:10px;
+}
+
+.details ul{
+  padding-left:18px;
+}
+
+/* Fixed Buttons */
+.fixed-buttons{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.fixed-buttons a{
+  text-decoration:none;
+  color:white;
+  padding:12px 18px;
+  border-radius:30px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.whatsapp{
+  background:#25D366;
+}
+
+.call{
+  background:#0a3d62;
+}
