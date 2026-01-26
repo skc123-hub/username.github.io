@@ -1,162 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shri Khatushyam Computers | MP Online & CSC</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f5f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #0d47a1, #1976d2);
-      color: #fff;
-      padding: 25px 15px;
-      text-align: center;
-    }
-    section {
-      padding: 15px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 18px;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #0d47a1;
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 18px;
-    }
-    li {
-      margin-bottom: 6px;
-    }
-    .btn {
-      display: block;
-      width: 100%;
-      text-align: center;
-      padding: 14px;
-      margin: 10px 0;
-      font-size: 17px;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .call { background: #2e7d32; }
-    .whatsapp { background: #25D366; }
-
-    .float-whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 14px 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      z-index: 999;
-    }
-
-    iframe {
-      width: 100%;
-      height: 260px;
-      border: none;
-      border-radius: 10px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 15px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 12px;
-      background: #e0e0e0;
-      font-size: 14px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Shri Khatushyam Computer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <h1>Shri Khatushyam Computers</h1>
-  <p>MP Online | CSC Center | Digital Services</p>
-  <p>श्री खाटूश्याम कम्प्यूटर्स</p>
+  <img src="logo.png" class="logo">
+  <h1>Shri Khatushyam Computer</h1>
+  <p>All Online Services Available</p>
 </header>
 
-<section>
+<div class="container">
 
-  <div class="card">
-    <h2>📌 Our Services / हमारी सेवाएं</h2>
-    <ul>
-      <li>MP Online Services</li>
-      <li>CSC Services</li>
-      <li>Aadhar Card / PAN Card</li>
-      <li>Online Form Filling</li>
-      <li>Printing, Scanning & Lamination</li>
-      <li>Banking & Government Services</li>
-    </ul>
+  <div class="service" onclick="toggle('udyam')">
+    <h3>Udyam Aadhaar</h3>
+    <div id="udyam" class="details">
+      <ul>
+        <li>New Registration</li>
+        <li>Update / Print</li>
+        <li>Required: Aadhaar, Mobile</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>📞 Contact Us / संपर्क करें</h2>
-    <a class="btn call" href="tel:9111279759">📞 Call Now</a>
-    <a class="btn whatsapp" href="https://wa.me/919111279759">💬 WhatsApp Now</a>
+  <div class="service" onclick="toggle('gumasta')">
+    <h3>Gumasta Licence</h3>
+    <div id="gumasta" class="details">
+      <ul>
+        <li>New Licence</li>
+        <li>Renewal</li>
+        <li>Required: Aadhaar, Address Proof</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>📝 Online Work Request / ऑनलाइन काम भेजें</h2>
-    <form>
-      <input type="text" placeholder="Your Name / नाम" required>
-      <input type="tel" placeholder="Mobile Number / मोबाइल" required>
-      <textarea rows="3" placeholder="Work Details / काम का विवरण"></textarea>
-      <a class="btn whatsapp" href="https://wa.me/919111279759">Submit on WhatsApp</a>
-    </form>
+  <div class="service" onclick="toggle('dl')">
+    <h3>Driving Licence</h3>
+    <div id="dl" class="details">
+      <ul>
+        <li>LL / DL Apply</li>
+        <li>Renewal</li>
+        <li>Duplicate DL</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>📍 Address / पता</h2>
-    <p>
-      Sony Colony, Amankhedi Road,<br>
-      Bhikangaon, Madhya Pradesh
-    </p>
+  <div class="service" onclick="toggle('online')">
+    <h3>All Online Forms</h3>
+    <div id="online" class="details">
+      <ul>
+        <li>MPOnline</li>
+        <li>CSC Services</li>
+        <li>Govt & Private Forms</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>🗺️ Find Us on Map</h2>
-    <iframe 
-      src="https://www.google.com/maps?q=Bhikangaon%20Madhya%20Pradesh&output=embed">
-    </iframe>
-  </div>
+</div>
 
-  <div class="card">
-    <h2>⏰ Working Hours / समय</h2>
-    <p>Monday – Saturday<br>9:00 AM – 8:00 PM</p>
-  </div>
+<!-- WhatsApp + Call Buttons -->
+<div class="fixed-buttons">
+  <a href="https://wa.me/918223929446" target="_blank" class="whatsapp">
+    WhatsApp
+  </a>
+  <a href="tel:8223929446" class="call">
+    Call
+  </a>
+</div>
 
-</section>
-
-<footer>
-  © 2026 Shri Khatushyam Computers. All Rights Reserved.
-</footer>
-
-<a class="float-whatsapp" href="https://wa.me/919111279759">💬 WhatsApp</a>
+<script>
+function toggle(id){
+  let el = document.getElementById(id);
+  el.style.display = (el.style.display === "block") ? "none" : "block";
+}
+</script>
 
 </body>
 </html>
