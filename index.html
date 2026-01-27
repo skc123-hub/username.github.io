@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shri Khatushyam Computer</title>
+<title>श्री खाटूश्याम कंप्यूटर</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -13,19 +15,20 @@ background:#f4f8fc;
 color:#333;
 }
 
-/* TOP RUNNING LINE */
+/* RUNNING LINE */
 .marquee{
 background:#ffeb3b;
 color:#000;
-padding:8px;
+padding:5px 8px;
 font-weight:600;
+font-size:14px;
 overflow:hidden;
 white-space:nowrap;
 }
 .marquee span{
 display:inline-block;
 padding-left:100%;
-animation:mar 18s linear infinite;
+animation:mar 20s linear infinite;
 }
 @keyframes mar{
 0%{transform:translateX(0)}
@@ -41,13 +44,18 @@ text-align:center;
 border-bottom-left-radius:30px;
 border-bottom-right-radius:30px;
 }
-header h1{font-size:32px;margin-bottom:8px}
-header p{opacity:.95}
+.shop-name{
+font-family:'Hind', sans-serif;
+font-size:36px;
+font-weight:700;
+letter-spacing:1px;
+margin-bottom:10px;
+}
 
 /* SECTION */
 section{padding:40px 20px;max-width:1100px;margin:auto}
 
-/* SERVICES GRID */
+/* SERVICES */
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -74,7 +82,7 @@ font-size:14px;
 line-height:1.7;
 }
 
-/* MESSAGE BOX */
+/* FORM */
 .form-box{
 background:white;
 border-radius:20px;
@@ -83,7 +91,7 @@ box-shadow:0 10px 25px rgba(0,0,0,0.08);
 max-width:500px;
 margin:auto;
 }
-.form-box input, .form-box textarea{
+.form-box input,.form-box textarea{
 width:100%;
 padding:12px;
 margin-bottom:12px;
@@ -134,19 +142,21 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 
 <body>
 
-<!-- RUNNING INFO LINE -->
 <div class="marquee">
-<span>पैन कार्ड | आधार कार्ड | लाड़ली बहना योजना | आय प्रमाण पत्र | मूल निवास | ड्राइविंग लाइसेंस | स्कॉलरशिप फॉर्म | Vyapam फॉर्म | CSC सेवाएं उपलब्ध</span>
+<span>
+पैन कार्ड | आयुष्मान कार्ड | कॉलेज एडमिशन फॉर्म | स्कॉलरशिप फॉर्म |
+सभी प्रकार की वैकेंसी के फॉर्म | MP Online | CSC संबंधित सभी कार्य
+</span>
 </div>
 
 <header>
-<h1>Shri Khatushyam Computer</h1>
+<h1 class="shop-name">श्री खाटूश्याम कंप्यूटर</h1>
 <p>MP Online | CSC | Digital Service Center</p>
 <p>Sony Colony, Amankhedi Road, Bhikangaon</p>
 </header>
 
 <section>
-<h2 style="text-align:center;margin-bottom:30px;">हमारी विस्तृत सेवाएं</h2>
+<h2 style="text-align:center;margin-bottom:30px;">हमारी सेवाएं</h2>
 
 <div class="services">
 
@@ -158,7 +168,6 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 <li>आधार अपडेट</li>
 <li>आयुष्मान कार्ड</li>
 <li>ई-श्रम कार्ड</li>
-<li>अपार / ABC आईडी</li>
 <li>गुमास्ता लाइसेंस</li>
 <li>पुलिस वेरिफिकेशन</li>
 <li>Resume बनवाना</li>
@@ -166,30 +175,33 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 </div>
 
 <div class="card">
-<h3>यातायात सेवाएं (Transport)</h3>
+<h3>Education Services</h3>
 <ul>
-<li>Driving Licence Apply</li>
-<li>Learner Licence</li>
-<li>DL Renewal</li>
-<li>वाहन रजिस्ट्रेशन सेवाएं</li>
+<li>कॉलेज एडमिशन फॉर्म</li>
+<li>कॉलेज स्कॉलरशिप फॉर्म</li>
+<li>कॉलेज आवास फॉर्म</li>
+<li>गांव की बेटी स्कॉलरशिप</li>
+<li>अजीम प्रेमजी स्कॉलरशिप</li>
+<li>छात्रावास एडमिशन</li>
+<li>रोजगार पंजीयन</li>
+<li>MPTAAS प्रोफाइल</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Bank & Payment Services</h3>
+<h3>Bank & Payment</h3>
 <ul>
-<li>Fino / Airtel Bank Account</li>
+<li>Fino / Airtel Bank</li>
 <li>आधार से पैसे निकालना</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Education Services</h3>
+<h3>Transport Services</h3>
 <ul>
-<li>कॉलेज / ITI फॉर्म</li>
-<li>स्कॉलरशिप फॉर्म</li>
-<li>नवोदय फॉर्म</li>
-<li>कॉलेज आवास फॉर्म</li>
+<li>Driving Licence</li>
+<li>Learner Licence</li>
+<li>DL Renewal</li>
 </ul>
 </div>
 
@@ -198,27 +210,36 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 
 <section>
 <div class="form-box">
-<h2 style="text-align:center;margin-bottom:15px;">सीधे मैसेज भेजें</h2>
+<h2 style="text-align:center;margin-bottom:15px;">WhatsApp Message भेजें</h2>
 <form onsubmit="sendMsg();return false;">
 <input type="text" id="name" placeholder="आपका नाम" required>
-<input type="text" id="work" placeholder="कौन सा काम करवाना है" required>
-<textarea id="msg" placeholder="पूरा विवरण लिखें"></textarea>
+<input type="text" id="work" placeholder="कौन सा काम" required>
+<textarea id="msg" placeholder="विवरण लिखें"></textarea>
 <button type="submit">WhatsApp पर भेजें</button>
 </form>
 </div>
 </section>
 
+<section>
+<h2 style="text-align:center;margin-bottom:20px;">हमारा स्थान</h2>
+<div style="max-width:900px;margin:auto;border-radius:20px;overflow:hidden;">
+<iframe 
+src="https://www.google.com/maps?q=Shri+Khatushyam+Computer+Bhikangaon&output=embed"
+width="100%" height="350" style="border:0;" loading="lazy"></iframe>
+</div>
+</section>
+
 <footer>
-© 2026 Shri Khatushyam Computer | All Rights Reserved
+© 2026 श्री खाटूश्याम कंप्यूटर
 </footer>
 
 <a class="whatsapp" href="https://wa.me/9111279759">📞</a>
 
 <script>
 function sendMsg(){
-let n=document.getElementById("name").value;
-let w=document.getElementById("work").value;
-let m=document.getElementById("msg").value;
+let n=name.value;
+let w=work.value;
+let m=msg.value;
 let text=`नाम: ${n}%0Aकाम: ${w}%0Aविवरण: ${m}`;
 window.open("https://wa.me/9111279759?text="+text,"_blank");
 }
