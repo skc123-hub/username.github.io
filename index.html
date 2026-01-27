@@ -17,9 +17,12 @@ body{font-family:Segoe UI, Arial, sans-serif;background:#f4f8fc;color:#333}
 @keyframes mar{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 
 /* HEADER */
-header{background:linear-gradient(135deg,#0b5ed7,#4da3ff);color:white;padding:40px 20px;text-align:center;border-bottom-left-radius:30px;border-bottom-right-radius:30px}
-.shop-name{font-family:'Hind', sans-serif;font-size:36px;font-weight:700;letter-spacing:1px;margin-bottom:10px}
-.timing{margin-top:8px;font-size:14px;font-weight:600;background:#ffeb3b;color:#000;display:inline-block;padding:6px 14px;border-radius:20px}
+header{background:linear-gradient(135deg,#0b5ed7,#4da3ff);color:white;padding:20px 15px;border-bottom-left-radius:30px;border-bottom-right-radius:30px}
+header .header-flex{display:flex;align-items:center;justify-content:center;gap:15px;flex-wrap:wrap}
+header img{width:80px;height:80px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.2)}
+header .header-text{text-align:center}
+.shop-name{font-family:'Hind', sans-serif;font-size:36px;font-weight:700;letter-spacing:1px;margin-bottom:6px}
+.timing{margin-top:6px;font-size:14px;font-weight:600;background:#ffeb3b;color:#000;display:inline-block;padding:5px 12px;border-radius:20px}
 
 /* SECTION */
 section{padding:40px 20px;max-width:1100px;margin:auto}
@@ -61,12 +64,17 @@ footer{background:#0b5ed7;color:white;text-align:center;padding:18px;margin-top:
 </span>
 </div>
 
-<!-- HEADER -->
+<!-- HEADER WITH LOGO -->
 <header>
-<h1 class="shop-name">श्री खाटूश्याम कंप्यूटर</h1>
-<p>MP Online | CSC | Digital Service Center</p>
-<p>Sony Colony, Amankhedi Road, Bhikangaon</p>
-<p class="timing">⏰ खुलने का समय: सुबह 9:00 बजे से रात 8:00 बजे तक</p>
+  <div class="header-flex">
+    <img src="https://raw.githubusercontent.com/skc123-hub/username.github.io/main/logo.png" alt="SKC Logo">
+    <div class="header-text">
+      <h1 class="shop-name">श्री खाटूश्याम कंप्यूटर</h1>
+      <p>MP Online | CSC | Digital Service Center</p>
+      <p>Sony Colony, Amankhedi Road, Bhikangaon</p>
+      <p class="timing">⏰ खुलने का समय: सुबह 9:00 बजे से रात 8:00 बजे तक</p>
+    </div>
+  </div>
 </header>
 
 <!-- SERVICES -->
