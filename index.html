@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,207 +8,184 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
-font-family: 'Segoe UI', sans-serif;
-background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+font-family:Segoe UI, Arial, sans-serif;
+background:#f4f8fc;
+color:#333;
+}
+
+/* HEADER */
+header{
+background:linear-gradient(135deg,#0b5ed7,#4da3ff);
 color:white;
-}
-
-/* HERO */
-.hero{
-min-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
+padding:40px 20px;
 text-align:center;
-padding:40px;
+border-bottom-left-radius:30px;
+border-bottom-right-radius:30px;
 }
-
-.hero-box{
-max-width:800px;
-background:rgba(255,255,255,0.12);
-backdrop-filter:blur(15px);
-border-radius:30px;
-padding:50px 30px;
-box-shadow:0 20px 50px rgba(0,0,0,.4);
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:18px;
-opacity:.9;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 35px;
-border-radius:50px;
-background:#00e0ff;
-color:black;
-font-weight:600;
-text-decoration:none;
-transition:.3s;
-}
-.btn:hover{
-transform:scale(1.05);
-box-shadow:0 10px 30px rgba(0,224,255,.6);
-}
+header h1{font-size:32px;margin-bottom:8px}
+header p{opacity:.95}
 
 /* SECTION */
-section{
-padding:60px 25px;
-}
+section{padding:40px 20px;max-width:1100px;margin:auto}
 
-/* SERVICES */
+/* SERVICES GRID */
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .card{
-background:rgba(255,255,255,0.15);
-backdrop-filter:blur(12px);
-border-radius:22px;
-padding:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.3);
-transition:.4s;
-cursor:pointer;
+background:white;
+border-radius:18px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:.3s;
 }
-
 .card:hover{
-transform:translateY(-8px) scale(1.02);
-background:rgba(255,255,255,0.22);
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
-
 .card h3{
+color:#0b5ed7;
 margin-bottom:10px;
-color:#00e0ff;
 }
-
-.details{
-display:none;
+.card ul{
+padding-left:18px;
 font-size:14px;
-line-height:1.6;
+line-height:1.7;
 }
 
-/* INFO */
+/* INFO BOX */
 .info{
-max-width:900px;
-margin:auto;
-background:rgba(255,255,255,0.12);
-padding:40px;
-border-radius:25px;
-backdrop-filter:blur(14px);
-box-shadow:0 20px 50px rgba(0,0,0,.4);
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 text-align:center;
 }
 
 /* FOOTER */
 footer{
+background:#0b5ed7;
+color:white;
 text-align:center;
-padding:25px;
-opacity:.8;
+padding:18px;
+margin-top:40px;
+border-top-left-radius:25px;
+border-top-right-radius:25px;
 }
 
 /* WHATSAPP */
 .whatsapp{
 position:fixed;
-bottom:25px;
-right:25px;
+bottom:22px;
+right:22px;
 background:#25D366;
 color:white;
-width:60px;
-height:60px;
+width:58px;
+height:58px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
 font-size:26px;
 text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,.4);
+box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
 </style>
-
-<script>
-function toggle(id){
-let x=document.getElementById(id);
-x.style.display = x.style.display==="block" ? "none" : "block";
-}
-</script>
-
 </head>
+
 <body>
 
-<!-- HERO -->
-<div class="hero">
-<div class="hero-box">
+<header>
 <h1>Shri Khatushyam Computer</h1>
-<p>One-Stop Digital Solution Center<br>
-MP Online • CSC • Cyber Services</p>
-<a href="#services" class="btn">Explore Services</a>
-</div>
-</div>
+<p>MP Online | CSC | Digital Service Center</p>
+<p>Sony Colony, Amankhedi Road, Bhikangaon</p>
+</header>
 
-<!-- SERVICES -->
-<section id="services">
-<h2 style="text-align:center;margin-bottom:40px;">Our Premium Services</h2>
+<section>
+<h2 style="text-align:center;margin-bottom:30px;">हमारी सेवाएं</h2>
 
 <div class="services">
 
-<div class="card" onclick="toggle('pan')">
-<h3>PAN Card Services</h3>
-<div class="details" id="pan">
-New PAN • Correction • Aadhaar Link • e-PAN
-</div>
-</div>
-
-<div class="card" onclick="toggle('udyam')">
-<h3>MSME / Udyam</h3>
-<div class="details" id="udyam">
-Registration • Update • Certificate Download
-</div>
-</div>
-
-<div class="card" onclick="toggle('dl')">
-<h3>Driving Licence</h3>
-<div class="details" id="dl">
-LL • New DL • Renewal • Slot Booking
-</div>
+<div class="card">
+<h3>Government & ID Services</h3>
+<ul>
+<li>पैन कार्ड</li>
+<li>वोटर कार्ड</li>
+<li>आधार कार्ड में पता अपडेट</li>
+<li>आयुष्मान कार्ड</li>
+<li>संबल कार्ड</li>
+<li>अपार आईडी</li>
+<li>ABC आईडी</li>
+<li>सभी प्रकार के e-KYC</li>
+</ul>
 </div>
 
-<div class="card" onclick="toggle('forms')">
-<h3>Online Forms</h3>
-<div class="details" id="forms">
-MP Online • CSC • Scholarships • Exams
+<div class="card">
+<h3>Online Registration</h3>
+<ul>
+<li>फिनो एवं एयरटेल पेमेंट बैंक अकाउंट ओपन</li>
+<li>फार्मर आईडी</li>
+<li>ई-श्रम कार्ड</li>
+<li>OTR पंजीयन</li>
+<li>छात्रवृत्ति में OTR अपडेट</li>
+<li>MP Online ID पंजीयन</li>
+</ul>
 </div>
+
+<div class="card">
+<h3>Certificates</h3>
+<ul>
+<li>मूल निवास प्रमाण पत्र</li>
+<li>आय प्रमाण पत्र</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Education Services</h3>
+<ul>
+<li>कॉलेज प्रवेश फॉर्म</li>
+<li>ITI प्रवेश फॉर्म</li>
+<li>कॉलेज प्रमोशन फीस</li>
+<li>स्कॉलरशिप फॉर्म</li>
+<li>गांव की बेटी योजना फॉर्म</li>
+<li>छात्रवृत्ति प्रोफाइल अपडेट</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Exams & Forms</h3>
+<ul>
+<li>प्राइवेट परीक्षा फॉर्म</li>
+<li>रूक जाना नहीं परीक्षा फॉर्म</li>
+<li>नवोदय प्रवेश फॉर्म</li>
+<li>सभी प्रकार के ऑनलाइन आवेदन फॉर्म</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Agriculture Services</h3>
+<ul>
+<li>कृषि यंत्र पंजीयन</li>
+</ul>
 </div>
 
 </div>
 </section>
 
-<!-- INFO -->
 <section>
 <div class="info">
-<h2>Why Choose Us?</h2><br>
-<p>
-✔ Trusted Government Services<br>
-✔ Fast & Secure Processing<br>
-✔ Professional Support<br>
-✔ Local + Digital Convenience
-</p>
+<h2>विशेष सुविधा</h2><br>
+<p><b>सेवाएं घर बैठे उपलब्ध है।</b></p>
 <br>
-<p><b>📍 Sony Colony, Amankhedi Road, Bhikangaon</b></p>
-<p>📞 9111279759</p>
+<p>📞 Call / WhatsApp: <b>9111279759</b></p>
 </div>
 </section>
 
 <footer>
-© 2026 Shri Khatushyam Computer
+© 2026 Shri Khatushyam Computer | All Rights Reserved
 </footer>
 
 <a class="whatsapp" href="https://wa.me/9111279759">📞</a>
