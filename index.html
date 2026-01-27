@@ -2,120 +2,193 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<title>Shri Khatushyam Computer | Digital Services Bhikangaon</title>
-<meta name="description" content="Shri Khatushyam Computer Bhikangaon - PAN Card, Aadhaar card, Esharm Card, Police verification, sambhal card, Ayushman, MSME, Driving Licence & all online services.">
-<meta name="keywords" content="Cyber Cafe Bhikangaon, PAN Card, Aadhaar Update, MP Online, CSC">
+<title>Shri Khatushyam Computers | Digital Services</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
-body{margin:0;font-family:Poppins;background:#0f172a;color:#e5e7eb}
-header{text-align:center;padding:20px;background:linear-gradient(135deg,#020617,#0f172a)}
-header img{height:80px}
-h1{color:#38bdf8;margin:10px 0}
-.container{max-width:1100px;margin:auto;padding:25px}
-input{width:100%;padding:12px;border-radius:8px;border:none;margin-bottom:20px}
-
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:#020617;padding:20px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,.4);animation:fadeUp .6s}
-.card h3{color:#38bdf8}
-details summary{cursor:pointer;color:#22d3ee}
-
-@keyframes fadeUp{
-from{opacity:0;transform:translateY(20px)}
-to{opacity:1;transform:translateY(0)}
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#1e293b; /* lighter dark blue */
+  color:#f1f5f9;      /* soft text */
+}
+header{
+  padding:20px;
+  text-align:center;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+header img{
+  height:80px;
+}
+header h1{
+  margin:10px 0 5px;
+  font-size:26px;
+  color:#38bdf8;
+}
+header p{
+  font-size:14px;
+  color:#cbd5f5;
 }
 
-footer{text-align:center;background:#020617;padding:25px;font-size:14px;color:#94a3b8}
-
-.whatsapp,.callbtn{
-position:fixed;right:20px;color:#fff;padding:14px 16px;border-radius:50%;
-box-shadow:0 10px 25px rgba(0,0,0,.5);text-decoration:none
+.container{
+  padding:25px;
+  max-width:1100px;
+  margin:auto;
 }
-.whatsapp{bottom:20px;background:#25D366;font-size:22px}
-.callbtn{bottom:90px;background:#0ea5e9;font-size:20px}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#1e293b;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  cursor:pointer;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+.card h3{
+  color:#38bdf8;
+  margin-bottom:8px;
+}
+.card p{
+  font-size:14px;
+  color:#f1f5f9;
+}
+
+details{
+  margin-top:10px;
+}
+details summary{
+  cursor:pointer;
+  color:#22d3ee;
+  font-size:14px;
+}
+
+footer{
+  margin-top:40px;
+  background:#1e293b;
+  padding:20px;
+  text-align:center;
+  font-size:13px;
+  color:#94a3b8;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 16px;
+  border-radius:50%;
+  font-size:22px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+  text-decoration:none;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<img src="logo.png">
-<h1>Shri Khatushyam Computer</h1>
-<p>Sony Colony, Amankhedi Road, Bhikangaon</p>
+  <img src="logo.png" alt="Shri Khatushyam Computers">
+  <h1>Shri Khatushyam Computers</h1>
+  <p>Sony Colony, Amankhedi Road, Bhikangaon</p>
 </header>
 
 <div class="container">
-<h2>🔍 Service Search</h2>
-<input type="text" id="search" placeholder="Service search kare..." onkeyup="searchService()">
+  <h2>हमारी सेवाएं | Our Services</h2>
 
-<h2>हमारी सेवाएं</h2>
-<div class="services" id="serviceList">
+  <div class="services">
 
-<div class="card"><h3>पैन कार्ड</h3><p>Apply / Correction</p>
-<details><summary>Details</summary>
-Documents: Aadhaar, Photo<br>Charges: ₹150*</details></div>
+    <div class="card">
+      <h3>पैन कार्ड</h3>
+      <p>PAN Card Apply / Correction</p>
+      <details>
+        <summary>Details देखें</summary>
+        Documents: Aadhaar, Photo, Signature<br>
+        Time: 7–15 Days
+      </details>
+    </div>
 
-<div class="card"><h3>आधार सेवाएं</h3><p>Address Update</p>
-<details><summary>Details</summary>
-Documents: Aadhaar, Address Proof<br>Charges: ₹100*</details></div>
+    <div class="card">
+      <h3>वोटर कार्ड</h3>
+      <p>New / Correction / Transfer</p>
+      <details>
+        <summary>Details देखें</summary>
+        Documents: Aadhaar, Address Proof
+      </details>
+    </div>
 
-<div class="card"><h3>वोटर कार्ड</h3><p>New / Update</p>
-<details><summary>Details</summary>
-Documents: Aadhaar<br>Charges: ₹50*</details></div>
+    <div class="card">
+      <h3>आधार सेवाएं</h3>
+      <p>Address Update / Print</p>
+      <details>
+        <summary>Details देखें</summary>
+        Documents: Aadhaar, Address Proof
+      </details>
+    </div>
 
-<div class="card"><h3>आयुष्मान / संबल</h3><p>Health Scheme</p>
-<details><summary>Details</summary>
-Samagra, Aadhaar<br>Charges: ₹0*</details></div>
+    <div class="card">
+      <h3>आयुष्मान / संबल</h3>
+      <p>Govt Health Schemes</p>
+      <details>
+        <summary>Details देखें</summary>
+        Documents: Samagra, Aadhaar
+      </details>
+    </div>
 
-<div class="card"><h3>MSME / उद्यम</h3><p>Business Registration</p>
-<details><summary>Details</summary>
-Aadhaar, PAN<br>Charges: ₹300*</details></div>
+    <div class="card">
+      <h3>MSME / उद्यम</h3>
+      <p>Business Registration</p>
+      <details>
+        <summary>Details देखें</summary>
+        Aadhaar, PAN, Business Details
+      </details>
+    </div>
 
-<div class="card"><h3>Driving Licence</h3><p>Apply / Renewal</p>
-<details><summary>Details</summary>
-Aadhaar, Photo<br>Charges: ₹250*</details></div>
+    <div class="card">
+      <h3>Driving Licence</h3>
+      <p>Apply / Renewal</p>
+      <details>
+        <summary>Details देखें</summary>
+        Aadhaar, Photo, Old Licence
+      </details>
+    </div>
 
-</div>
-</div>
+    <div class="card">
+      <h3>Online Forms</h3>
+      <p>All Govt & Private Forms</p>
+      <details>
+        <summary>Details देखें</summary>
+        Exam, Job, Admission Forms
+      </details>
+    </div>
 
-<div class="container">
-<h2>📩 Online Enquiry</h2>
-<form>
-<input placeholder="Name">
-<input placeholder="Mobile">
-<input placeholder="Required Service">
-<input placeholder="Message">
-<button style="padding:12px;width:100%;border-radius:8px;background:#38bdf8;border:none;font-weight:600">Submit</button>
-</form>
-</div>
-
-<div class="container">
-<h2>📍 हमारी लोकेशन</h2>
-<iframe src="https://www.google.com/maps?q=Bhikangaon&output=embed"
-width="100%" height="300" style="border-radius:14px;border:0"></iframe>
+  </div>
 </div>
 
 <footer>
-<strong>Shri Khatushyam Computer</strong><br>
-Sony Colony, Amankhedi Road, Bhikangaon<br>
-🕘 9 AM – 8 PM (All Days)<br><br>
-© 2026 Digital Services Center
+  © 2026 Shri Khatushyam Computers | All Rights Reserved
 </footer>
 
-<a class="whatsapp" href="https://wa.me/9111279759"><i class="fa-brands fa-whatsapp"></i></a>
-<a class="callbtn" href="tel:XXXXXXXXXX"><i class="fa-solid fa-phone"></i></a>
-
-<script>
-function searchService(){
-let v=document.getElementById("search").value.toLowerCase();
-document.querySelectorAll(".card").forEach(c=>{
-c.style.display=c.innerText.toLowerCase().includes(v)?"block":"none";
-});
-}
-</script>
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
