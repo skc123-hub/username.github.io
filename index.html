@@ -2,102 +2,96 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<title>Shri Khatushyam Computer | Digital Services</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>Shri Khatushyam Computer</title>
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
-  background:#1e293b; /* lighter dark blue */
-  color:#f1f5f9;      /* soft text */
+font-family:Segoe UI, Arial, sans-serif;
+background:#f4f8fc;
+color:#333;
 }
+
+/* HEADER */
 header{
-  padding:20px;
-  text-align:center;
-  background:linear-gradient(135deg,#0f172a,#1e293b);
+background:linear-gradient(135deg,#0b5ed7,#4da3ff);
+color:white;
+padding:40px 20px;
+text-align:center;
+border-bottom-left-radius:30px;
+border-bottom-right-radius:30px;
 }
-header img{
-  height:80px;
-}
-header h1{
-  margin:10px 0 5px;
-  font-size:26px;
-  color:#38bdf8;
-}
-header p{
-  font-size:14px;
-  color:#cbd5f5;
-}
+header h1{font-size:32px;margin-bottom:8px}
+header p{opacity:.95}
 
-.container{
-  padding:25px;
-  max-width:1100px;
-  margin:auto;
-}
+/* SECTION */
+section{padding:40px 20px;max-width:1100px;margin:auto}
 
+/* SERVICES GRID */
 .services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .card{
-  background:#1e293b;
-  border-radius:12px;
-  padding:20px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
-  cursor:pointer;
-  transition:0.3s;
+background:white;
+border-radius:18px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:.3s;
 }
 .card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.5);
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 .card h3{
-  color:#38bdf8;
-  margin-bottom:8px;
+color:#0b5ed7;
+margin-bottom:10px;
 }
-.card p{
-  font-size:14px;
-  color:#f1f5f9;
-}
-
-details{
-  margin-top:10px;
-}
-details summary{
-  cursor:pointer;
-  color:#22d3ee;
-  font-size:14px;
+.card ul{
+padding-left:18px;
+font-size:14px;
+line-height:1.7;
 }
 
+/* INFO BOX */
+.info{
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+/* FOOTER */
 footer{
-  margin-top:40px;
-  background:#1e293b;
-  padding:20px;
-  text-align:center;
-  font-size:13px;
-  color:#94a3b8;
+background:#0b5ed7;
+color:white;
+text-align:center;
+padding:18px;
+margin-top:40px;
+border-top-left-radius:25px;
+border-top-right-radius:25px;
 }
 
+/* WHATSAPP */
 .whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:14px 16px;
-  border-radius:50%;
-  font-size:22px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.5);
-  text-decoration:none;
+position:fixed;
+bottom:22px;
+right:22px;
+background:#25D366;
+color:white;
+width:58px;
+height:58px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
 </style>
 </head>
@@ -105,90 +99,97 @@ footer{
 <body>
 
 <header>
-  <img src="logo.png" alt="Shri Khatushyam Computers">
-  <h1>Shri Khatushyam Computer</h1>
-  <p>Sony Colony, Amankhedi Road, Bhikangaon</p>
+<h1>Shri Khatushyam Computer</h1>
+<p>MP Online | CSC | Digital Service Center</p>
+<p>Sony Colony, Amankhedi Road, Bhikangaon</p>
 </header>
 
-<div class="container">
-  <h2>हमारी सेवाएं | Our Services</h2>
+<section>
+<h2 style="text-align:center;margin-bottom:30px;">हमारी सेवाएं</h2>
 
-  <div class="services">
+<div class="services">
 
-    <div class="card">
-      <h3>पैन कार्ड</h3>
-      <p>PAN Card Apply / Correction</p>
-      <details>
-        <summary>Details देखें</summary>
-        Documents: Aadhaar, Photo, Signature<br>
-        Time: 7–15 Days
-      </details>
-    </div>
-
-    <div class="card">
-      <h3>वोटर कार्ड</h3>
-      <p>New / Correction / Transfer</p>
-      <details>
-        <summary>Details देखें</summary>
-        Documents: Aadhaar, Address Proof
-      </details>
-    </div>
-
-    <div class="card">
-      <h3>आधार सेवाएं</h3>
-      <p>Address Update / Print</p>
-      <details>
-        <summary>Details देखें</summary>
-        Documents: Aadhaar, Address Proof
-      </details>
-    </div>
-
-    <div class="card">
-      <h3>आयुष्मान / संबल</h3>
-      <p>Govt Health Schemes</p>
-      <details>
-        <summary>Details देखें</summary>
-        Documents: Samagra, Aadhaar
-      </details>
-    </div>
-
-    <div class="card">
-      <h3>MSME / उद्यम</h3>
-      <p>Business Registration</p>
-      <details>
-        <summary>Details देखें</summary>
-        Aadhaar, PAN, Business Details
-      </details>
-    </div>
-
-    <div class="card">
-      <h3>Driving Licence</h3>
-      <p>Apply / Renewal</p>
-      <details>
-        <summary>Details देखें</summary>
-        Aadhaar, Photo, Old Licence
-      </details>
-    </div>
-
-    <div class="card">
-      <h3>Online Forms</h3>
-      <p>All Govt & Private Forms</p>
-      <details>
-        <summary>Details देखें</summary>
-        Exam, Job, Admission Forms
-      </details>
-    </div>
-
-  </div>
+<div class="card">
+<h3>Government & ID Services</h3>
+<ul>
+<li>पैन कार्ड</li>
+<li>वोटर कार्ड</li>
+<li>आधार कार्ड में पता अपडेट</li>
+<li>आयुष्मान कार्ड</li>
+<li>संबल कार्ड</li>
+<li>ईश्रम कार्ड</li>
+<li>अपार आईडी</li>
+<li>ABC आईडी</li>
+<li>सभी प्रकार के e-KYC</li>
+</ul>
 </div>
 
+<div class="card">
+<h3>Online Registration</h3>
+<ul>
+<li>फिनो एवं एयरटेल पेमेंट बैंक अकाउंट ओपन</li>
+<li>फार्मर आईडी</li>
+<li>ई-श्रम कार्ड</li>
+<li>OTR पंजीयन</li>
+<li>छात्रवृत्ति में OTR अपडेट</li>
+<li>MP Online ID पंजीयन</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Certificates</h3>
+<ul>
+<li>मूल निवास प्रमाण पत्र</li>
+<li>आय प्रमाण पत्र</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Education Services</h3>
+<ul>
+<li>कॉलेज प्रवेश फॉर्म</li>
+<li>ITI प्रवेश फॉर्म</li>
+<li>कॉलेज प्रमोशन फीस</li>
+<li>स्कॉलरशिप फॉर्म</li>
+<li>गांव की बेटी योजना फॉर्म</li>
+<li>छात्रवृत्ति प्रोफाइल अपडेट</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Exams & Forms</h3>
+<ul>
+<li>प्राइवेट परीक्षा फॉर्म</li>
+<li>रूक जाना नहीं परीक्षा फॉर्म</li>
+<li>नवोदय प्रवेश फॉर्म</li>
+<li>सभी प्रकार के ऑनलाइन आवेदन फॉर्म</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Agriculture Services</h3>
+<ul>
+<li>कृषि यंत्र एवं ड्रिप पंजीयन</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="info">
+<h2>विशेष सुविधा</h2><br>
+<p><b>सेवाएं घर बैठे उपलब्ध है।</b></p>
+<br>
+<p>📞 Call / WhatsApp: <b>9111279759</b></p>
+</div>
+</section>
+
 <footer>
-  © 2026 Shri Khatushyam Computer | All Rights Reserved
+© 2026 Shri Khatushyam Computer | All Rights Reserved
 </footer>
 
-<a class="whatsapp" href="https://wa.me/9111279759" target="_blank">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+<a class="whatsapp" href="https://wa.me/9111279759">📞</a>
 
 </body>
 </html>
