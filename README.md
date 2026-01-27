@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shri Khatushyam Computers</title>
+<title>Shri Khatushyam Computer</title>
 
 <style>
 body{
@@ -79,7 +79,7 @@ body{
   ✔ New PAN Card Apply<br>
   ✔ PAN Correction (Name, DOB)<br>
   ✔ Lost PAN Reprint<br>
-  ⏱ Time: 7–10 Days<br>
+  ⏱ Time: 10–15 Days<br>
   💰 Charges: As per Govt
 </div>
 
@@ -119,7 +119,7 @@ body{
 
 <!-- FOOTER -->
 <div class="footer">
-  © Shri Khatushyam Computers
+  © Shri Khatushyam Computer
 </div>
 
 <!-- SCRIPT -->
