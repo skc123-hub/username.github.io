@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shri Khatushyam Computer</title>
+<title>Shri Khatushyam Computer | MP Online & CSC</title>
+
+<meta name="description" content="Shri Khatushyam Computer – MP Online, CSC, Government Forms, Bank Services in Bhikangaon">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -17,12 +19,16 @@ color:#333;
 header{
 background:linear-gradient(135deg,#0b5ed7,#4da3ff);
 color:white;
-padding:40px 20px;
+padding:35px 20px 50px;
 text-align:center;
 border-bottom-left-radius:30px;
 border-bottom-right-radius:30px;
 }
-header h1{font-size:32px;margin-bottom:8px}
+header img{
+width:90px;
+margin-bottom:10px;
+}
+header h1{font-size:32px;margin-bottom:6px}
 header p{opacity:.95}
 
 /* SECTION */
@@ -41,10 +47,11 @@ border-radius:18px;
 padding:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:.3s;
+position:relative;
 }
 .card:hover{
-transform:translateY(-5px);
-box-shadow:0 15px 35px rgba(0,0,0,0.15);
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(0,0,0,0.15);
 }
 .card h3{
 color:#0b5ed7;
@@ -55,6 +62,17 @@ padding-left:18px;
 font-size:14px;
 line-height:1.7;
 }
+.card button{
+margin-top:12px;
+background:#0b5ed7;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:8px;
+cursor:pointer;
+font-size:13px;
+}
+.card button:hover{background:#094cb4}
 
 /* INFO BOX */
 .info{
@@ -76,13 +94,10 @@ border-top-left-radius:25px;
 border-top-right-radius:25px;
 }
 
-/* WHATSAPP */
-.whatsapp{
+/* FLOATING BUTTONS */
+.whatsapp, .call{
 position:fixed;
-bottom:22px;
 right:22px;
-background:#25D366;
-color:white;
 width:58px;
 height:58px;
 border-radius:50%;
@@ -91,7 +106,39 @@ align-items:center;
 justify-content:center;
 font-size:26px;
 text-decoration:none;
+color:white;
 box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+.whatsapp{bottom:22px;background:#25D366}
+.call{bottom:90px;background:#0b5ed7}
+
+/* MODAL */
+.modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.5);
+align-items:center;
+justify-content:center;
+z-index:10;
+}
+.modal-content{
+background:white;
+padding:25px;
+border-radius:16px;
+max-width:400px;
+width:90%;
+text-align:center;
+}
+.modal-content h3{color:#0b5ed7;margin-bottom:10px}
+.close{
+margin-top:15px;
+background:#0b5ed7;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:8px;
+cursor:pointer;
 }
 </style>
 </head>
@@ -99,83 +146,52 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 <body>
 
 <header>
+<!-- LOGO -->
+<img src="logo.png" alt="Shri Khatushyam Computer Logo">
 <h1>Shri Khatushyam Computer</h1>
 <p>MP Online | CSC | Digital Service Center</p>
 <p>Sony Colony, Amankhedi Road, Bhikangaon</p>
 </header>
 
 <section>
-<h2 style="text-align:center;margin-bottom:30px;">हमारी विस्तृत सेवाएं</h2>
+<h2 style="text-align:center;margin-bottom:30px;">हमारी सेवाएं</h2>
 
 <div class="services">
 
 <div class="card">
 <h3>Government & ID Services</h3>
 <ul>
-<li>पैन कार्ड</li>
-<li>वोटर कार्ड</li>
-<li>आधार कार्ड में पता अपडेट</li>
-<li>आयुष्मान कार्ड</li>
-<li>संबल कार्ड</li>
-<li>ई-श्रम कार्ड</li>
-<li>अपार आईडी</li>
-<li>ABC आईडी</li>
-<li>सभी प्रकार के e-KYC</li>
-<li>गुमास्ता लाइसेंस</li>
-<li>पुलिस वेरिफिकेशन</li>
-<li>Resume बनवाना / अपडेट</li>
+<li>पैन कार्ड, वोटर ID</li>
+<li>आधार अपडेट, e-KYC</li>
+<li>आयुष्मान, ई-श्रम</li>
+<li>गुमास्ता, पुलिस वेरिफिकेशन</li>
 </ul>
+<button onclick="openModal('सभी सरकारी ID एवं दस्तावेज़ सेवाएं सुरक्षित और तेज़ प्रक्रिया से की जाती हैं।')">
+View Details
+</button>
 </div>
 
 <div class="card">
-<h3>Bank & Payment Services</h3>
+<h3>Bank & Payment</h3>
 <ul>
-<li>फिनो एवं एयरटेल पेमेंट बैंक अकाउंट ओपन</li>
-<li>आधार कार्ड से सभी बैंकों से पैसे निकालना</li>
+<li>Fino / Airtel Bank</li>
+<li>आधार से सभी बैंक निकासी</li>
 </ul>
-</div>
-
-<div class="card">
-<h3>Certificates & Legal</h3>
-<ul>
-<li>मूल निवास प्रमाण पत्र</li>
-<li>आय प्रमाण पत्र</li>
-<li>OTR पंजीयन</li>
-<li>छात्रवृत्ति में OTR अपडेट</li>
-</ul>
+<button onclick="openModal('आधार आधारित कैश विड्रॉल और बैंक अकाउंट ओपन सुविधा उपलब्ध।')">
+View Details
+</button>
 </div>
 
 <div class="card">
 <h3>Education Services</h3>
 <ul>
-<li>कॉलेज प्रवेश फॉर्म</li>
-<li>ITI प्रवेश फॉर्म</li>
-<li>कॉलेज प्रमोशन फीस</li>
-<li>स्कॉलरशिप फॉर्म</li>
-<li>गांव की बेटी योजना फॉर्म</li>
-<li>छात्रवृत्ति प्रोफाइल अपडेट</li>
-<li>नवोदय प्रवेश फॉर्म</li>
-<li>कॉलेज आवास फॉर्म</li>
-<li>Private/External परीक्षा फॉर्म</li>
-<li>रूक जाना नहीं परीक्षा फॉर्म</li>
-<li>सभी प्रकार के कॉलेज और scholarship फॉर्म</li>
+<li>कॉलेज / ITI फॉर्म</li>
+<li>Scholarship & Hostel</li>
+<li>Vyapam / Exam Forms</li>
 </ul>
-</div>
-
-<div class="card">
-<h3>Other Online Applications</h3>
-<ul>
-<li>Vyapam / अन्य सरकारी परीक्षा फॉर्म</li>
-<li>सभी प्रकार के ऑनलाइन आवेदन फॉर्म</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Agriculture & Misc</h3>
-<ul>
-<li>कृषि यंत्र एवं ड्रिप पंजीयन</li>
-<li>Farmer ID</li>
-</ul>
+<button onclick="openModal('सभी कॉलेज, स्कॉलरशिप एवं परीक्षा फॉर्म यहां भरे जाते हैं।')">
+View Details
+</button>
 </div>
 
 </div>
@@ -183,9 +199,8 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 
 <section>
 <div class="info">
-<h2>जय श्री श्याम</h2><br>
-<p><b>सभी सेवाएं घर बैठे उपलब्ध है। एक बार सेवा का मौका अवश्य दे </b></p>
-<br>
+<h2>🙏 जय श्री श्याम 🙏</h2><br>
+<p><b>सभी सेवाएं घर बैठे उपलब्ध हैं</b></p><br>
 <p>📞 Call / WhatsApp: <b>9111279759</b></p>
 </div>
 </section>
@@ -194,7 +209,27 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 © 2026 Shri Khatushyam Computer | All Rights Reserved
 </footer>
 
-<a class="whatsapp" href="https://wa.me/9111279759">📞</a>
+<a class="call" href="tel:9111279759">📞</a>
+<a class="whatsapp" href="https://wa.me/9111279759">💬</a>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+<div class="modal-content">
+<h3>Service Details</h3>
+<p id="modalText"></p>
+<button class="close" onclick="closeModal()">Close</button>
+</div>
+</div>
+
+<script>
+function openModal(text){
+document.getElementById("modalText").innerText=text;
+document.getElementById("modal").style.display="flex";
+}
+function closeModal(){
+document.getElementById("modal").style.display="none";
+}
+</script>
 
 </body>
 </html>
