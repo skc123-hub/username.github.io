@@ -82,6 +82,43 @@ font-size:14px;
 line-height:1.7;
 }
 
+/* SHYAM GLOW CARD */
+.shyam-section{
+text-align:center;
+margin:20px auto;
+}
+.shyam-card{
+background:#fff;
+max-width:600px;
+margin:auto;
+padding:25px 20px;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+.shyam-glow{
+font-size:28px;
+font-weight:700;
+letter-spacing:1px;
+background:linear-gradient(90deg,#ffd700,#ff9800,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+text-shadow:
+0 0 6px rgba(255,215,0,0.8),
+0 0 14px rgba(255,152,0,0.6);
+animation:glowPulse 2.5s ease-in-out infinite;
+}
+@keyframes glowPulse{
+0%{text-shadow:0 0 5px rgba(255,215,0,.6),0 0 12px rgba(255,152,0,.4)}
+50%{text-shadow:0 0 10px rgba(255,215,0,1),0 0 25px rgba(255,152,0,.9)}
+100%{text-shadow:0 0 5px rgba(255,215,0,.6),0 0 12px rgba(255,152,0,.4)}
+}
+.shyam-sub{
+margin-top:10px;
+font-size:15px;
+font-weight:500;
+color:#444;
+}
+
 /* FORM */
 .form-box{
 background:white;
@@ -155,18 +192,17 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 <p>Sony Colony, Amankhedi Road, Bhikangaon</p>
 </header>
 
+<!-- SERVICES -->
 <section>
 <h2 style="text-align:center;margin-bottom:30px;">हमारी सेवाएं</h2>
-
 <div class="services">
 
 <div class="card">
 <h3>Government & ID Services</h3>
 <ul>
-<li>न्यू पेन कार्ड/पेन कार्ड में करेक्शन</li>
+<li>न्यू पेन कार्ड / करेक्शन</li>
 <li>वोटर कार्ड</li>
-<li>संभल कार्ड</li>
-<li>आधार में मोबाइल नंबर/ पता अपडेट</li>
+<li>आधार अपडेट</li>
 <li>आयुष्मान कार्ड</li>
 <li>ई-श्रम कार्ड</li>
 <li>गुमास्ता लाइसेंस</li>
@@ -178,25 +214,22 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 <div class="card">
 <h3>Education Services</h3>
 <ul>
-<li>कॉलेज एडमिशन फॉर्म</li>
-<li>कॉलेज स्कॉलरशिप फॉर्म</li>
-<li>कॉलेज आवास फॉर्म</li>
-<li>गांव की बेटी स्कॉलरशिप</li>
-<li>अजीम प्रेमजी स्कॉलरशिप</li>
-<li>छात्रावास एडमिशन</li>
+<li>कॉलेज एडमिशन</li>
+<li>स्कॉलरशिप</li>
+<li>कॉलेज आवास</li>
+<li>छात्रावास</li>
 <li>रोजगार पंजीयन</li>
-<li>MPTAAS प्रोफाइल</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>समग्र सम्बन्धित कार्य</h3>
 <ul>
-<li>e-KYC करना</li>
-<li>माता-पिता का नाम अपडेट करना</li>
+<li>e-KYC</li>
+<li>माता-पिता नाम अपडेट</li>
 <li>जन्म तारीख सुधार</li>
 <li>परिवार विभाजन</li>
-<li>समग्र में बच्चों के नाम जोड़ना</li>
+<li>बच्चों के नाम जोड़ना</li>
 <li>समग्र आईडी प्रिंट</li>
 </ul>
 </div>
@@ -221,6 +254,17 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 </div>
 </section>
 
+<!-- JAI SHREE SHYAM (AB SAHI JAGAH) -->
+<section class="shyam-section">
+<div class="shyam-card">
+<div class="shyam-glow">🙏 जय श्री श्याम 🙏</div>
+<div class="shyam-sub">
+सभी प्रकार के कार्य की सुविधा घर बैठे उपलब्ध है
+</div>
+</div>
+</section>
+
+<!-- WHATSAPP FORM -->
 <section>
 <div class="form-box">
 <h2 style="text-align:center;margin-bottom:15px;">WhatsApp Message भेजें</h2>
@@ -230,15 +274,6 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 <textarea id="msg" placeholder="विवरण लिखें"></textarea>
 <button type="submit">WhatsApp पर भेजें</button>
 </form>
-</div>
-</section>
-
-<section>
-<h2 style="text-align:center;margin-bottom:20px;">हमारा स्थान</h2>
-<div style="max-width:900px;margin:auto;border-radius:20px;overflow:hidden;">
-<iframe 
-src="https://www.google.com/maps?q=Shri+Khatushyam+Computer+Bhikangaon&output=embed"
-width="100%" height="350" style="border:0;" loading="lazy"></iframe>
 </div>
 </section>
 
